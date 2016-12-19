@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alan_.actividad_3b.MainActivity"
+    android:background="@android:color/holo_blue_bright">
+
+    <TextView
+        android:text="@string/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="31dp"
+        android:id="@+id/tv_nom"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tv_nom"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_nom"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="@string/dni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_nom"
+        android:layout_alignStart="@+id/tv_nom"
+        android:layout_marginTop="35dp"
+        android:id="@+id/tv_dni"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/et_nom"
+        android:layout_alignStart="@+id/et_nom"
+        android:layout_marginTop="24dp"
+        android:id="@+id/et_dni" />
+
+    <TextView
+        android:text="@string/nacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_dni"
+        android:layout_alignStart="@+id/tv_dni"
+        android:layout_marginTop="39dp"
+        android:id="@+id/tv_nacimiento"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/tv_sex"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tv_nom">
+
+        <RadioButton
+            android:text="@string/man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_sex"
+            android:layout_toEndOf="@+id/tv_nom"
+            android:id="@+id/rb_man"
+            android:checked="true" />
+
+        <RadioButton
+            android:text="@string/woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rb_man"
+            android:layout_alignStart="@+id/et_nacimiento"
+            android:id="@+id/rb_woman" />
+
+    </RadioGroup>
+
+    <Button
+        android:text="@string/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_save"
+        android:elevation="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/et_day"
+        android:layout_width="30dp"
+        android:layout_alignBaseline="@+id/tv_day"
+        android:layout_alignBottom="@+id/tv_day"
+        android:layout_toEndOf="@+id/tv_sex"
+        android:maxLength="2" />
+
+    <TextView
+        android:text="@string/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:id="@+id/tv_sex"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/et_day"
+        android:layout_alignStart="@+id/tv_day" />
+
+    <TextView
+        android:text="@string/month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_month"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/et_day"
+        android:layout_alignBottom="@+id/et_day"
+        android:layout_alignStart="@+id/et_dni" />
+
+    <TextView
+        android:text="@string/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/tv_day"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tv_nacimiento"
+        android:layout_alignEnd="@+id/tv_dni" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/et_anyo"
+        android:layout_marginStart="14dp"
+        android:maxLength="4"
+        android:layout_alignBaseline="@+id/tv_anyo"
+        android:layout_alignBottom="@+id/tv_anyo"
+        android:layout_toEndOf="@+id/tv_anyo" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/et_month"
+        android:maxLength="2"
+        android:layout_width="30dp"
+        android:layout_alignBaseline="@+id/tv_month"
+        android:layout_alignBottom="@+id/tv_month"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/tv_anyo"
+        android:layout_marginStart="13dp"
+        android:layout_alignBaseline="@+id/et_month"
+        android:layout_alignBottom="@+id/et_month"
+        android:layout_toEndOf="@+id/tv_nacimiento" />
+</RelativeLayout>

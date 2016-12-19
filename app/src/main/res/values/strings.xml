@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Actividad_3b</string>
+    <string name="name">Nombre</string>
+    <string name="dni">DNI</string>
+    <string name="nacimiento">Fecha de nacimiento</string>
+    <string name="sex">Sexo</string>
+    <string name="save">Almacenar</string>
+    <string name="man">Hombre</string>
+    <string name="woman">Mujer</string>
+    <string name="day">Día</string>
+    <string name="month">Mes</string>
+    <string name="year">Año</string>
+    <string name="error_name">El campo nombre está vacío</string>
+    <string name="error_dni">El campo DNI está vacío</string>
+    <string name="error_date">Error en la fecha. Introduce una fecha correcta</string>
+</resources>
